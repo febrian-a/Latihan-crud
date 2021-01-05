@@ -15,7 +15,7 @@ use App\Http\Livewire\Members; //Load class Members
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function() {
